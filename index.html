@@ -250,10 +250,11 @@
             text-transform: uppercase;
         }
 
-        .grid {
+    .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-            gap: 60px 30px;
+            /* 최소 너비를 300px 정도로 줄여서 데스크탑에서 3~4칸까지 자연스럽게 배치되도록 유도합니다 */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 50px 24px; /* gap도 카드가 작아진 만큼 비율에 맞게 살짝 줄입니다 */
             margin-bottom: 80px;
         }
 
